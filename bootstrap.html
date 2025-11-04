@@ -12,35 +12,83 @@
 <body>
     <!-- Bootstrap navbar styled with navbar-dark and bg-primary (blue color and white text) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="images/bootstrap-logo-white.svg" alt="bootstrap logotype" width="35" height="29" class="d-inline-block align-text-top"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Hem</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="bootstrap.html">Bootstrap</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tailwind.html">Tailwind</a>
-        </li>
-                <li class="nav-item">
-          <a class="nav-link" href="deployment.html">Publicering</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/bootstrap-logo-white.svg"
+                    alt="bootstrap logotype" width="35" height="29" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tailwind.html">Tailwind</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deployment.html">Publicering</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <ul>
         <li>För denna sida har jag inkluderat Bootstraps CSS i head-avsnittet, och JS och Popper som separata
             Script-taggar
             (kan inkluderas gemensamt men har inkluderats separat utifall att Popper inte används).</li>
-            <li>Bootstrap kan även inkludras via Bootstraps npm-paket (npm install bootstrap@5.3.8). Då behövs en SASS complier och autoprefixer. Förklaras närmare här: <a href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers" target="_blank">Bootstrap package manager</a></li>
+        <li>Bootstrap kan även inkludras via Bootstraps npm-paket (npm install bootstrap@5.3.8). Då behövs en SASS
+            complier och autoprefixer. Förklaras närmare här: <a
+                href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers"
+                target="_blank">Bootstrap package manager</a></li>
     </ul>
+    <table class="table table-hover table-striped">
+        <caption>List of form data</caption>
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Input</th>
+                <th scope="col">Textarea</th>
+                <th scope="col">Checkbox</th>
+                <th scope="col">Select</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>Input 1</td>
+                <td>Textarea 1</td>
+                <td>Checkbox 1</td>
+                <td>Select 1</td>
+            </tr>
+            <tr>
+                <td>Input 2</td>
+                <td>Textarea 2</td>
+                <td>Checkbox 2</td>
+                <td>Select 2</td>
+            </tr>
+            <tr>
+                <td>Input 3</td>
+                <td>Textarea 3</td>
+                <td>Checkbox 3</td>
+                <td>Select 3</td>
+            </tr>
+            <tr>
+                <td>Input 4</td>
+                <td>Textarea 4</td>
+                <td>Checkbox 4</td>
+                <td>Select 4</td>
+            </tr>
+            <tr>
+                <td>Input 5</td>
+                <td>Textarea 5</td>
+                <td>Checkbox 5</td>
+                <td>Select 5</td>
+            </tr>
+        </tbody>
+    </table>
     <!-- Include Popper and JS separately to save some space in case Popper is not needed  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
