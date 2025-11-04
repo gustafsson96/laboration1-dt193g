@@ -46,11 +46,41 @@
                 href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers"
                 target="_blank">Bootstrap package manager</a></li>
     </ul>
+
+    <!-- Bootstrap form -->
+    <form class="border rounded p-4 m-5 bg-light">
+        <div class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="mb-3 col">
+                <label for="firstname" class="form-label">Namn</label>
+                <input type="text" class="form-control" id="firstname">
+            </div>
+            <div class="mb-3 col">
+                <label for="select" class="form-label">Välj</label>
+                <select class="form-select" id="select" aria-label="Default select example">
+                    <option value="1" selected>One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="mb-3 col form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Checkbox</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="textarea" class="form-label">Textarea</label>
+            <textarea class="form-control" id="textarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Skicka</button>
+    </form>
+
+    <!-- Bootstrap table -->
     <table class="table table-hover table-striped">
         <caption>List of form data</caption>
         <thead class="table-dark">
             <tr>
                 <th scope="col">Input</th>
+                <th scope="col">Input 2</th>
                 <th scope="col">Textarea</th>
                 <th scope="col">Checkbox</th>
                 <th scope="col">Select</th>
@@ -59,30 +89,35 @@
         <tbody class="table-group-divider">
             <tr>
                 <td>Input 1</td>
+                <td>Input</td>
                 <td>Textarea 1</td>
                 <td>Checkbox 1</td>
                 <td>Select 1</td>
             </tr>
             <tr>
                 <td>Input 2</td>
+                <td>Input</td>
                 <td>Textarea 2</td>
                 <td>Checkbox 2</td>
                 <td>Select 2</td>
             </tr>
             <tr>
                 <td>Input 3</td>
+                <td>Input</td>
                 <td>Textarea 3</td>
                 <td>Checkbox 3</td>
                 <td>Select 3</td>
             </tr>
             <tr>
                 <td>Input 4</td>
+                <td>Input</td>
                 <td>Textarea 4</td>
                 <td>Checkbox 4</td>
                 <td>Select 4</td>
             </tr>
             <tr>
                 <td>Input 5</td>
+                <td>Input</td>
                 <td>Textarea 5</td>
                 <td>Checkbox 5</td>
                 <td>Select 5</td>
