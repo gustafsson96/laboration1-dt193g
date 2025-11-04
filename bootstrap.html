@@ -10,8 +10,33 @@
 </head>
 
 <body>
+    <!-- Bootstrap navbar styled with navbar-dark and bg-primary (blue color and white text) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Logotyp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Hem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="bootstrap.html">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tailwind.html">Tailwind</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="deployment.html">Publicering</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <ul>
-        <li>För denna sida har jag inkluderat Bootstraps CSS i head-avsnittet, och JS och Popper som separate
+        <li>För denna sida har jag inkluderat Bootstraps CSS i head-avsnittet, och JS och Popper som separata
             Script-taggar
             (kan inkluderas gemensamt men har inkluderats separat utifall att Popper inte används).</li>
             <li>Bootstrap kan även inkludras via Bootstraps npm-paket (npm install bootstrap@5.3.8). Då behövs en SASS complier och autoprefixer. Förklaras närmare här: <a href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers" target="_blank">Bootstrap package manager</a></li>
