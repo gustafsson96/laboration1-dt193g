@@ -261,14 +261,8 @@
   .m-auto {
     margin: auto;
   }
-  .mx-2 {
-    margin-inline: calc(var(--spacing) * 2);
-  }
   .mx-auto {
     margin-inline: auto;
-  }
-  .my-10 {
-    margin-block: calc(var(--spacing) * 10);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -436,9 +430,6 @@
   .border-gray-800 {
     border-color: var(--color-gray-800);
   }
-  .border-gray-900 {
-    border-color: var(--color-gray-900);
-  }
   .border-gray-900\/10 {
     border-color: color-mix(in srgb, oklch(21% 0.034 264.665) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -459,9 +450,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-950) 50%, transparent);
     }
-  }
-  .bg-green-100 {
-    background-color: var(--color-green-100);
   }
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
