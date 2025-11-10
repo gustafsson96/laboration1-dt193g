@@ -114,14 +114,15 @@
                 Mitt största problem med Tailwind CSS har hittills varit att det ibland känns som man måste arbeta med
                 onödig upprepning av koden, särskilt när man är van vid att försöka undvika redundans. Detta blev
                 särskilt tydligt då jag arbetade med tabellen längre ned på denna sida och insåg att jag var tvungen att
-                styla varje enskilt th-element och td-element. Det finns färdigdesignade tabeller via tailwindPLUS, men eftersom de är bakom en betalvägg
-                    kom jag inte åt dem. Jag testade dessutom att skapa ett separat Vite-projekt och installerade
-                    Tailwind som ett plugin för att se om jag kunde hitta någon bättre lösning. Jag testade bland annat
-                    att lagra tabell-stylingen i så kallade ”@layer components” i en separat css-fil, vilket fungerade
-                    rätt bra. Det kändes dock lite onödigt att ha en så pass liten del av stylingen i en separat fil,
-                    så jag kan fortfarande inte helt bestämma mig för vad jag föredrar och bestämde mig för att behålla
-                    all styling skapad av mig i HTML-koden för den här sidan. Kanske att det kan vara värt det i större
-                    projekt.
+                styla varje enskilt th-element och td-element. Det finns färdigdesignade tabeller via tailwindPLUS, men
+                eftersom de är bakom en betalvägg
+                kom jag inte åt dem. Jag testade dessutom att skapa ett separat Vite-projekt och installerade
+                Tailwind som ett plugin för att se om jag kunde hitta någon bättre lösning. Jag testade bland annat
+                att lagra tabell-stylingen i så kallade ”@layer components” i en separat css-fil, vilket fungerade
+                rätt bra. Det kändes dock lite onödigt att ha en så pass liten del av stylingen i en separat fil,
+                så jag kan fortfarande inte helt bestämma mig för vad jag föredrar och bestämde mig för att behålla
+                all styling skapad av mig i HTML-koden för den här sidan. Kanske att det kan vara värt det i större
+                projekt.
             </p>
         </article>
     </section>
@@ -242,11 +243,11 @@
                     </fieldset>
                 </div>
             </div>
-        </div>
-        <div class="mt-6 flex items-center justify-center gap-x-6">
-            <button type="submit"
-                class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skicka</button>
-            <button type="button" class="text-sm/6 font-semibold text-gray-900">Avbryt</button>
+            <div class="mt-6 flex items-center justify-center gap-x-6">
+                <button type="submit"
+                    class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skicka</button>
+                <button type="button" class="text-sm/6 font-semibold text-gray-900">Avbryt</button>
+            </div>
         </div>
     </form>
 
