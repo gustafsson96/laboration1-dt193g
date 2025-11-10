@@ -72,27 +72,57 @@
         </el-disclosure>
     </nav>
 
-    <h1 class="text-center font-bold text-3xl lg:text-4xl mt-8">Tailwind CSS</h1>
+    <h1 class="text-center font-bold text-3xl lg:text-4xl mt-8 mb-4">Tailwind CSS</h1>
 
-    <section class="grid lg:grid-cols-3 md:w-3/4 lg:w-9/10 lg:mx-auto">
-        <article class="border border-gray-800 m-4">
-            <h2 class="font-bold text-xl lg:text-2xl">Om Tailwind CSS</h2>
-            <p>Här är lite informatino om Tailwind CSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                sequi hic excepturi cum, recusandae pariatur nemo aliquam odio ut cupiditate rem accusantium sint illum
-                sed esse, ad, fugit placeat dolore?</p>
-        </article>
-        <article class="border border-gray-800 m-4">
-            <h2 class="font-bold text-xl lg:text-2xl">Mina upplevelser</h2>
-            <p>Här är lite information on mina upplevelser med utvecklingsarbetet. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Perferendis quasi quos commodi odio enim repellat impedit obcaecati quo
-                similique ratione recusandae ipsam accusamus dolor, sed incidunt, dolores, debitis consequatur eaque!
+    <section class="grid md:w-3/4 md:mx-auto xl:w-9/10 xl:grid-cols-2 gap-4 place-items-center max-w-7xl">
+        <article class="m-4">
+            <h2 class="font-bold text-xl lg:text-2xl lg:text-center mb-1">Om Tailwind CSS</h2>
+            <p>Tailwind CSS är ett så kallat ”utility-first”-ramverk, vilket innebär att styling sker med hjälp av
+                mindre, färdiga klasser som inkluderas direkt i HTML-koden. Dokumentationen för en av de tidigare
+                versionerna av Tailwind CSS (v0.7.4) fastställer att det är ett ramverk utan både fördesignade
+                komponenter och standardtema, vilket innebär att utvecklaren har full kontroll över webbsidans utseende.
+                Det finns dock färdiga stilmallar och kod-block för till exempel menyer och användbara sektioner av
+                olika slag som fördesignats med klasser av Tailwind-teamet. Dessa finns tillgängliga via <a
+                    href="https://tailwindcss.com/plus" target="_blank">Tailwind PLUS</a>
+                och kan med enkelhet kopieras och modifieras utefter behov, men enbart ett fåtal är gratis att ta del
+                av. Denna information har hämtats från <a href="https://tailwindcss.com/" target="_blank">Tailwind
+                    CSS</a> och videon <a href="https://play.miun.se/media/t/0_nboa9n75"
+                    target="_blank">”Fullstacksutveckling med ramverk –
+                    Intro + föreläsning 1”</a> av Malin Larsson, lärare på Mittuniversitetet.
             </p>
         </article>
-        <article class="border border-gray-800 m-4">
-            <h2 class="font-bold text-xl lg:text-2xl">För- och nackdelar</h2>
-            <p>Här är några för och nackdelar som jag upptäckt med Tailwind CSS. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nostrum culpa inventore commodi! Quos, quis alias et eveniet neque nemo architecto
-                accusamus placeat, ducimus cumque quod commodi? Similique numquam iusto repellendus!</p>
+        <article class="m-4">
+            <h2 class="font-bold text-xl lg:text-2xl lg:text-center mb-1">Utvärdering</h2>
+            <p>Efter en del arbete med ramverket Bootstrap kändes inlärningskurvan för Tailwind CSS rätt skarp. Jag
+                började med att läsa dokumentationen och testade successivt att applicera olika klasser på elementen i
+                min kod utefter det jag läste för att se hur designen påverkades. Det kändes inledningsvis ovant att
+                inkludera en stor mängd klasser direkt i HTML-koden för att få till den styling jag önskade eftersom jag
+                är van vid att hålla HTML-kod och CSS-kod separerade. Efter att ha kollat upp en del exempel och testat
+                modifiera färdig kod från TailwindPLUS tog det dock inte allt för lång tid innan jag började uppskatta
+                arbetsprocessen. Även tillägget ”Tailwind CSS IntelliSense” i Visual Studio Code som ger förslag på
+                klasser bidrog till att det kändes lättare.
+            </p>
+        </article>
+        <article class="m-4 xl:col-span-2 xl:w-2/3">
+            <h2 class="font-bold text-xl lg:text-2xl lg:text-center mb-1">För- och nackdelar</h2>
+            <p>Det jag upplever är de största fördelarna med Tailwind CSS är att de fördefinierade klasserna erbjuder en
+                stor flexibilitet, och att det (efter att man vant sig vid arbetssättet) är behändigt att kunna hantera
+                styling direkt i HTML-koden. Tack vare en välskriven och strukturerad dokumentation var det dessutom
+                lätt att komma i gång. Jag inkluderade först deras Play CDN i head-avsnittet, men eftersom den inte
+                ger någon möjlighet att kompilera CSS-koden installerade jag sedan Tailwind CLI.
+                <br><br>
+                Mitt största problem med Tailwind CSS har hittills varit att det ibland känns som man måste arbeta med
+                onödig upprepning av koden, särskilt när man är van vid att försöka undvika redundans. Detta blev
+                särskilt tydligt då jag arbetade med tabellen längre ned på denna sida och insåg att jag var tvungen att
+                styla varje enskilt th-element och td-element. Det finns färdigdesignade tabeller via tailwindPLUS, men eftersom de är bakom en betalvägg
+                    kom jag inte åt dem. Jag testade dessutom att skapa ett separat Vite-projekt och installerade
+                    Tailwind som ett plugin för att se om jag kunde hitta någon bättre lösning. Jag testade bland annat
+                    att lagra tabell-stylingen i så kallade ”@layer components” i en separat css-fil, vilket fungerade
+                    rätt bra. Det kändes dock lite onödigt att ha en så pass liten del av stylingen i en separat fil,
+                    så jag kan fortfarande inte helt bestämma mig för vad jag föredrar och bestämde mig för att behålla
+                    all styling skapad av mig i HTML-koden för den här sidan. Kanske att det kan vara värt det i större
+                    projekt.
+            </p>
         </article>
     </section>
 
