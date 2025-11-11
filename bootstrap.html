@@ -48,52 +48,68 @@
             <a href="https://getbootstrap.com/" class="btn btn-primary" target="_blank">Bootstrap</a>
         </div>
 
-        <div class="container-fluid bg-success mt-3">
-            <div class="row align-items-stretch">
-                <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
-                    <div class="card flex-fill">
-                        <h2>Om Bootstrap</h2>
-                        <p>Här är information om bootstrap. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quas
-                            eveniet corporis consequatur possimus, cumque accusantium rem tenetur vel tempore suscipit
-                            illo
-                            tempora corrupti, adipisci, inventore mollitia sunt deleniti omnis. Soluta.</p>
+        <div class="container mt-3">
+            <div class="row g-2">
+                <div class="col-12 col-lg-6 d-flex">
+                    <div class="p-3 border border-indigo-600 flex-fill">
+                        <h2 class="text-lg-center">Om Bootstrap</h2>
+                        <p>Bootstrap är ett populärt och komponentbaserat ramverk med öppen källkod. Det kommer därmed
+                            med fördesignade komponenter som inkluderas med hjälp av klasser, och installeras antingen
+                            som en CDN eller som ett paket i någon av de vanliga pakethanterarna (npm, yarn eller
+                            RubyGems för att nämna några exempel). Länkar man till Bootstrap via deras CDN är CSS- och
+                            JavaScript-koden redan kompilerad, men installeras det som ett paket för att man till
+                            exempel vill modifiera komponenter måste man kontrollera att det finns en Sass-kompilerare
+                            och Autoprefixer.
+                            <br><br>
+                            All denna information har hämtats från Bootstraps dokumentation och videon
+                            ”Fullstacksutveckling med ramverk – Intro + föreläsning 1” av Malin Larsson, lärare på
+                            Mittuniversitetet.
+                        </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
-                    <div class="card flex-fill">
-                        <h2>Mina upplevelser</h2>
-                        <p>Här är mina upplevelser. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                            non
-                            aperiam architecto sunt laudantium impedit, laborum vitae culpa rerum. Error, modi. Nobis
-                            harum
-                            quae
-                            quasi in soluta beatae provident consequatur.</p>
+                <div class="col-12 col-lg-6 d-flex">
+                    <div class="p-3 border border-indigo-600 flex-fill">
+                        <h2 class="text-lg-center">Utvärdering översikt</h2>
+                        <p>Även om jag inte arbetat med Bootstrap tidigare har jag ändå tagit del av en del videos och
+                            kod-exempel där man använt det som ramverk, så det kändes inte helt främmande när jag skulle
+                            påbörja arbetet med denna sida. Jag inkluderade Bootstrap med hjälp av deras CDN, vilket var
+                            gick väldigt smidigt. Med hjälp av de färdiga komponenterna och dokumentationen som är
+                            välstrukturerad och lätt att förstå kändes det som att jag snabbt kunde skapa mycket
+                            innehåll på kort tid. Eftersom jag dessutom har erfarenhet av CSS flex och grid sedan
+                            tidigare tog det inte alltför lång tid innan strukturen för positionering av innehåll kändes
+                            logisk. Jag är dock inte van vid att arbeta mobile-first, vilket är utgångspunkten i
+                            Bootstrap, så det påverkade inlärningskurvan för mig en aning.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
-                    <div class="card flex-fill">
-                        <h2>För- och nackdelar</h2>
-                        <p>Här är för och nackdelar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                            autem
-                            ipsa
-                            fugit nisi repellendus perferendis. Aliquam quos iure totam veniam laboriosam. Ducimus
-                            recusandae
-                            perspiciatis, atque itaque magni inventore doloremque fugiat.</p>
+                <div class="col-12 col-lg-8 d-flex mx-auto">
+                    <div class="p-3 border border-indigo-600">
+                        <h2 class="text-lg-center">Utvärdering för- och nackdelar</h2>
+                        <p>Det jag uppskattar främst med Bootstrap är hur snabbt det gick att komma i gång och hur lite
+                            kod som krävs för att skapa design som ser helt okej ut som minst. Jag upplever även att det
+                            är lätt att söka rätt på ny information via dokumentationen, så det känns som att man kan
+                            både lära sig och åstadkomma mycket på kort tid. Det är definitivt ett ramverk jag vill
+                            arbeta mer med eftersom jag är övertygad om att det kan vara hjälpsamt för många olika typer
+                            av projekt i framtiden, inte minst för att skapa prototyper.
+                            <br><br>
+                            Bootstrap är dock inte det ramverk jag hade valt om jag var ute efter att skapa en väldigt
+                            specifik eller mer personlig design. Eftersom det kommer med färdiga komponenter kommer de
+                            även med ett standard-utseende som kanske inte passar all design. Det finns möjlighet att
+                            modifiera Bootstrap-komponenter via SASS/SCSS om man installerar det som ett npm-paket, men
+                            om man vet med sig att det kommer krävas mycket modifiering skulle jag personligen hellre
+                            välja ett annat ramverk där jag kan styra utseendet från grunden.
+                            <br><br>
+                            Jag är inte heller helt imponerad över den stora mängden div-element som Bootstrap-kod ofta
+                            verkar resultera i, främst för att jag tycker att koden ser ostrukturerad och repetitiv ut
+                            om man har mycket innehåll som kräver olika behållare. Det är mer av en personlig smaksak
+                            kanske, och för projekt där jag vill se resultat snabbt väger fördelarna ändå tyngre än
+                            nackdelarna när det kommer till Bootstrap.
+                            <br><br>
+                            I bootstrap saknas en klass för max-width, så jag fick inkludera det med ett style attribut.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <ul>
-            <li>För denna sida har jag inkluderat Bootstraps CSS i head-avsnittet, och JS och Popper som separata
-                Script-taggar
-                (kan inkluderas gemensamt men har inkluderats separat utifall att Popper inte används).</li>
-            <li>Bootstrap kan även inkludras via Bootstraps npm-paket (npm install bootstrap@5.3.8). Då behövs en SASS
-                complier och autoprefixer. Förklaras närmare här: <a
-                    href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers"
-                    target="_blank">Bootstrap package manager</a></li>
-        </ul>
 
         <!-- Bootstrap form -->
         <form class="border rounded p-4 m-5 bg-light">
