@@ -41,132 +41,137 @@
     <!-- Page container to set a max-width -->
     <div class="mx-auto" style="max-width: 1200px;">
 
-    <h1>Bootstrap</h1>
+        <!-- Button to Bootstrap webpage -->
+        <div class="text-center mx-auto">
+            <h1 class="m-4">Bootstrap</h1>
+            <p>Besök Bootstraps webbsida:</p>
+            <a href="https://getbootstrap.com/" class="btn btn-primary" target="_blank">Bootstrap</a>
+        </div>
 
-    <div class="container-fluid bg-success mt-3">
-        <div class="row align-items-stretch">
-            <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
-                <div class="card flex-fill">
-                    <h2>Om Bootstrap</h2>
-                    <p>Här är information om bootstrap. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        eveniet corporis consequatur possimus, cumque accusantium rem tenetur vel tempore suscipit illo
-                        tempora corrupti, adipisci, inventore mollitia sunt deleniti omnis. Soluta.</p>
+        <div class="container-fluid bg-success mt-3">
+            <div class="row align-items-stretch">
+                <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
+                    <div class="card flex-fill">
+                        <h2>Om Bootstrap</h2>
+                        <p>Här är information om bootstrap. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas
+                            eveniet corporis consequatur possimus, cumque accusantium rem tenetur vel tempore suscipit
+                            illo
+                            tempora corrupti, adipisci, inventore mollitia sunt deleniti omnis. Soluta.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
-                <div class="card flex-fill">
-                    <h2>Mina upplevelser</h2>
-                    <p>Här är mina upplevelser. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum non
-                        aperiam architecto sunt laudantium impedit, laborum vitae culpa rerum. Error, modi. Nobis harum
-                        quae
-                        quasi in soluta beatae provident consequatur.</p>
+                <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
+                    <div class="card flex-fill">
+                        <h2>Mina upplevelser</h2>
+                        <p>Här är mina upplevelser. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                            non
+                            aperiam architecto sunt laudantium impedit, laborum vitae culpa rerum. Error, modi. Nobis
+                            harum
+                            quae
+                            quasi in soluta beatae provident consequatur.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
-                <div class="card flex-fill">
-                    <h2>För- och nackdelar</h2>
-                    <p>Här är för och nackdelar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum autem
-                        ipsa
-                        fugit nisi repellendus perferendis. Aliquam quos iure totam veniam laboriosam. Ducimus
-                        recusandae
-                        perspiciatis, atque itaque magni inventore doloremque fugiat.</p>
+                <div class="col-12 col-md-10 col-lg-4 border border-indigo-600 d-flex">
+                    <div class="card flex-fill">
+                        <h2>För- och nackdelar</h2>
+                        <p>Här är för och nackdelar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                            autem
+                            ipsa
+                            fugit nisi repellendus perferendis. Aliquam quos iure totam veniam laboriosam. Ducimus
+                            recusandae
+                            perspiciatis, atque itaque magni inventore doloremque fugiat.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Button to Bootstrap webpage -->
-    <div class="border">
-        <a href="https://getbootstrap.com/" class="btn btn-primary" target="_blank">Bootstrap</a>
-    </div>
+        <ul>
+            <li>För denna sida har jag inkluderat Bootstraps CSS i head-avsnittet, och JS och Popper som separata
+                Script-taggar
+                (kan inkluderas gemensamt men har inkluderats separat utifall att Popper inte används).</li>
+            <li>Bootstrap kan även inkludras via Bootstraps npm-paket (npm install bootstrap@5.3.8). Då behövs en SASS
+                complier och autoprefixer. Förklaras närmare här: <a
+                    href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers"
+                    target="_blank">Bootstrap package manager</a></li>
+        </ul>
 
-    <ul>
-        <li>För denna sida har jag inkluderat Bootstraps CSS i head-avsnittet, och JS och Popper som separata
-            Script-taggar
-            (kan inkluderas gemensamt men har inkluderats separat utifall att Popper inte används).</li>
-        <li>Bootstrap kan även inkludras via Bootstraps npm-paket (npm install bootstrap@5.3.8). Då behövs en SASS
-            complier och autoprefixer. Förklaras närmare här: <a
-                href="https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers"
-                target="_blank">Bootstrap package manager</a></li>
-    </ul>
-
-    <!-- Bootstrap form -->
-    <form class="border rounded p-4 m-5 bg-light">
-        <div class="row row-cols-lg-auto g-3 align-items-center">
-            <div class="mb-3 col">
-                <label for="firstname" class="form-label">Namn</label>
-                <input type="text" class="form-control" id="firstname">
+        <!-- Bootstrap form -->
+        <form class="border rounded p-4 m-5 bg-light">
+            <div class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="mb-3 col">
+                    <label for="firstname" class="form-label">Namn</label>
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+                <div class="mb-3 col">
+                    <label for="select" class="form-label">Välj</label>
+                    <select class="form-select" id="select" aria-label="Default select example">
+                        <option value="1" selected>One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-3 col form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                    <label class="form-check-label" for="checkbox">Checkbox</label>
+                </div>
             </div>
-            <div class="mb-3 col">
-                <label for="select" class="form-label">Välj</label>
-                <select class="form-select" id="select" aria-label="Default select example">
-                    <option value="1" selected>One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Textarea</label>
+                <textarea class="form-control" id="textarea" rows="3"></textarea>
             </div>
-            <div class="mb-3 col form-check">
-                <input type="checkbox" class="form-check-input" id="checkbox">
-                <label class="form-check-label" for="checkbox">Checkbox</label>
-            </div>
-        </div>
-        <div class="mb-3">
-            <label for="textarea" class="form-label">Textarea</label>
-            <textarea class="form-control" id="textarea" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Skicka</button>
-    </form>
+            <button type="submit" class="btn btn-primary">Skicka</button>
+        </form>
 
-    <!-- Bootstrap table -->
-    <table class="table table-hover table-striped">
-        <caption>List of form data</caption>
-        <thead class="table-dark">
-            <tr>
-                <th scope="col">Input</th>
-                <th scope="col">Input 2</th>
-                <th scope="col">Textarea</th>
-                <th scope="col">Checkbox</th>
-                <th scope="col">Select</th>
-            </tr>
-        </thead>
-        <tbody class="table-group-divider">
-            <tr>
-                <td>Input 1</td>
-                <td>Input</td>
-                <td>Textarea 1</td>
-                <td>Checkbox 1</td>
-                <td>Select 1</td>
-            </tr>
-            <tr>
-                <td>Input 2</td>
-                <td>Input</td>
-                <td>Textarea 2</td>
-                <td>Checkbox 2</td>
-                <td>Select 2</td>
-            </tr>
-            <tr>
-                <td>Input 3</td>
-                <td>Input</td>
-                <td>Textarea 3</td>
-                <td>Checkbox 3</td>
-                <td>Select 3</td>
-            </tr>
-            <tr>
-                <td>Input 4</td>
-                <td>Input</td>
-                <td>Textarea 4</td>
-                <td>Checkbox 4</td>
-                <td>Select 4</td>
-            </tr>
-            <tr>
-                <td>Input 5</td>
-                <td>Input</td>
-                <td>Textarea 5</td>
-                <td>Checkbox 5</td>
-                <td>Select 5</td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- Bootstrap table -->
+        <table class="table table-hover table-striped">
+            <caption>List of form data</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Input</th>
+                    <th scope="col">Input 2</th>
+                    <th scope="col">Textarea</th>
+                    <th scope="col">Checkbox</th>
+                    <th scope="col">Select</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Input 1</td>
+                    <td>Input</td>
+                    <td>Textarea 1</td>
+                    <td>Checkbox 1</td>
+                    <td>Select 1</td>
+                </tr>
+                <tr>
+                    <td>Input 2</td>
+                    <td>Input</td>
+                    <td>Textarea 2</td>
+                    <td>Checkbox 2</td>
+                    <td>Select 2</td>
+                </tr>
+                <tr>
+                    <td>Input 3</td>
+                    <td>Input</td>
+                    <td>Textarea 3</td>
+                    <td>Checkbox 3</td>
+                    <td>Select 3</td>
+                </tr>
+                <tr>
+                    <td>Input 4</td>
+                    <td>Input</td>
+                    <td>Textarea 4</td>
+                    <td>Checkbox 4</td>
+                    <td>Select 4</td>
+                </tr>
+                <tr>
+                    <td>Input 5</td>
+                    <td>Input</td>
+                    <td>Textarea 5</td>
+                    <td>Checkbox 5</td>
+                    <td>Select 5</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <!-- Include Popper and JS separately to save some space in case Popper is not needed  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
