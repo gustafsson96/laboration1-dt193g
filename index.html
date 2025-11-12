@@ -40,59 +40,88 @@
     </nav>
 
     <!-- Page container to set a max-width -->
-    <div class="mx-auto" style="max-width: 1200px;">
+    <div class="mx-auto" style="max-width: 1200px; margin-bottom: 200px;">
 
         <div class="text-center">
             <h1 class="mt-4 text-center">Hem</h1>
-            <p>Laboration 1</p>
         </div>
 
-        <div class="container">
 
-            <div class="row">
+        <div class="container">
+            <!-- Row for information about the assignment -->
+            <div class="row p-3">
+                <h4 class="text-center my-3">Laboration 1</h4>
                 <div class="col-md-8 mx-auto">
                     Huvudsyftet med denna uppgift är att vi ska få en överblick av vilka CSS-ramverk som
                     finns för att senare kunna välja ett att fördjupa kunskaperna inom för kursens projektuppgift. För
-                    att möjliggöra detta ska vi bekanta oss med två olika CSS-ramverk som används för att skapa två olika undersidor (en per ramverk). Dessa sidor ska dessutom
+                    att möjliggöra detta ska vi bekanta oss med två olika CSS-ramverk som används för att skapa två
+                    olika undersidor (en per ramverk). Dessa sidor ska dessutom
                     innehålla information och en utvärdering av respektive ramverk. Jag har valt att arbeta med
                     Bootstrap och Tailwind CSS.
+                    <br><br>
+                    Vi ska även välja en publiceringsmetod som inte är FTP-baserad för att publicera webbplatsen. Publiceringsmetoden ska beskrivas närmare på en egen undersida. Jag har valt att använda GitHub Pages för denna laboration.
+                </div>
+            </div>
+            <!-- Separate row for bootstrap cards with links to the separate pages on the website -->
+            <div class="row align-items-stretch g-3 mt-5">
+                <div class="col-12 col-md-8 col-lg-4 d-flex mx-auto">
+                    <div class="card flex-fill h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap</h5>
+                            <p class="card-text">Startsidan och undersidan "Bootstrap" är stylade med ramverket
+                                Bootstrap. Här finns mer information om ramverket tillsammans med en utvärdering om min
+                                upplevelse med arbetsprocessen.</p>
+                            <div class="text-center my-4">
+                                <a href="bootstrap.html" class="btn btn-primary">Bootstrap</a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row g-3 mt-5">
-                    <div class="col-12 col-md-8 col-lg-4 d-flex mx-auto">
-                        <div class="card flex-fill">
-                            <div class="card-body">
-                                <h5 class="card-title">Bootstrap</h5>
-                                <p class="card-text"></p>
+                <div class="col-12 col-md-8 col-lg-4 d-flex mx-auto">
+                    <div class="card flex-fill h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Tailwind CSS</h5>
+                            <p class="card-text">Undersidorna "Tailwind CSS" och "Publicering" är stylade med ramverket
+                                Tailwind CSS. Här finns mer information om ramverket tillsammans med en utvärdering om
+                                min upplevelse med arbetsprocessen.</p>
+                            <div class="text-center my-4">
+                                <a href="tailwind.html" class="btn btn-success">Tailwind CSS</a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-12 col-md-8 col-lg-4 d-flex mx-auto">
-                        <div class="card flex-fill">
-                            <div class="card-body">
-                                <h5 class="card-title">Tailwind CSS</h5>
-                                <p class="card-text"></p>
+                <div class="col-12 col-md-8 col-lg-4 d-flex mx-auto">
+                    <div class="card flex-fill h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Publicering</h5>
+                            <p class="card-text">Denna webbplats har publicerats med hjälp av GitHub Pages, en tjänst som tillhandahålls av GitHub. Här finns information om publiceringsmetoden tillsammans med en steg-för-steg guide om hur jag gick till väga.</p>
+                            <div class="text-center my-4">
+                                <a href="deployment.html" class="btn btn-secondary">Publicering</a>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
 
-                    <div class="col-12 col-md-8 col-lg-4 d-flex mx-auto">
-                        <div class="card flex-fill">
-                            <div class="card-body">
-                                <h5 class="card-title">Publicering</h5>
-                                <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
+
+    <footer class="fixed-bottom bg-primary p-3 text-white">
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-12 col-md">Laboration 1 - Fullstacks-utveckling med ramverk</div>
+                <div class="col-12 col-md">Julia Gustafsson</div>
+                <div class="col-12 col-md">Denna sida är stylad med ramverket Bootstrap</div>
+            </div>
+        </div>
+    </footer>
     <!-- Include Popper and JS separately to save some space in case Popper is not needed  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
