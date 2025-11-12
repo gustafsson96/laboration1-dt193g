@@ -145,13 +145,13 @@
 
                 <!-- Select container -->
                 <div class="sm:col-span-3">
-                    <label for="country" class="block text-sm/6 font-medium text-gray-900">Välj</label>
+                    <label for="country" class="block text-sm/6 font-medium text-gray-900">Sysselsättning</label>
                     <div class="mt-2 grid grid-cols-1">
                         <select id="country" name="country" autocomplete="country-name"
                             class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-                            <option>Ett</option>
-                            <option>Två</option>
-                            <option>Tre</option>
+                            <option>Student</option>
+                            <option>Arbete</option>
+                            <option>Övrigt</option>
                         </select>
                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true"
                             class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
@@ -164,7 +164,7 @@
 
                 <!-- Textarea container -->
                 <div class="col-span-full">
-                    <label for="textarea" class="block text-sm/6 font-medium text-gray-900">Textarea</label>
+                    <label for="textarea" class="block text-sm/6 font-medium text-gray-900">Fakta om dig</label>
                     <div class="mt-2">
                         <textarea id="textarea" name="textarea" rows="3"
                             class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
@@ -174,10 +174,8 @@
             </div>
             <!-- Checkbox container -->
             <div class="pb-12">
-                <h2 class="text-base/7 font-semibold text-gray-900">Notifikationer</h2>
                 <div class="mt-6 space-y-10">
                     <fieldset>
-                        <legend class="text-sm/6 font-semibold text-gray-900">Checkbox</legend>
                         <div class="mt-6 space-y-6">
                             <div class="flex gap-3">
                                 <div class="flex h-6 shrink-0 items-center">
@@ -196,50 +194,9 @@
                                     </div>
                                 </div>
                                 <div class="text-sm/6">
-                                    <label for="comments" class="font-medium text-gray-900">Alternativ 1</label>
+                                    <label for="comments" class="font-medium text-gray-900">Jag vill ta emot nyhetsbrev</label>
                                 </div>
                             </div>
-                            <div class="flex gap-3">
-                                <div class="flex h-6 shrink-0 items-center">
-                                    <div class="group grid size-4 grid-cols-1">
-                                        <input id="candidates" type="checkbox" name="candidates"
-                                            aria-describedby="candidates-description"
-                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
-                                        <svg viewBox="0 0 14 14" fill="none"
-                                            class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                            <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100">
-                                                <path d="M3 7H11" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="opacity-0 group-has-indeterminate:opacity-100">
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="text-sm/6">
-                                    <label for="candidates" class="font-medium text-gray-900">Alternativ 2</label>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div class="flex h-6 shrink-0 items-center">
-                                    <div class="group grid size-4 grid-cols-1">
-                                        <input id="offers" type="checkbox" name="offers"
-                                            aria-describedby="offers-description"
-                                            class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
-                                        <svg viewBox="0 0 14 14" fill="none"
-                                            class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                            <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100">
-                                                <path d="M3 7H11" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="opacity-0 group-has-indeterminate:opacity-100">
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="text-sm/6">
-                                    <label for="offers" class="font-medium text-gray-900">Alternativ 3</label>
-                                </div>
-                            </div>
-                        </div>
                     </fieldset>
                 </div>
             </div>
@@ -256,48 +213,42 @@
         <table class="table-auto w-full md:w-9/10 border border-gray-300 mx-auto">
             <thead class="bg-gray-100">
                 <tr>
-                    <th class="px-4 py-2 border-b border-gray-300 text-left">Input</th>
-                    <th class="px-4 py-2 border-b border-gray-300 text-left">Input 2</th>
-                    <th class="px-4 py-2 border-b border-gray-300 text-left">Textarea</th>
-                    <th class="px-4 py-2 border-b border-gray-300 text-left">Checkbox</th>
-                    <th class="px-4 py-2 border-b border-gray-300 text-left">Select</th>
+                    <th class="px-4 py-2 border-b border-gray-300 text-left">Namn</th>
+                    <th class="px-4 py-2 border-b border-gray-300 text-left">Sysselsättning</th>
+                    <th class="px-4 py-2 border-b border-gray-300 text-left">Fakta</th>
+                    <th class="px-4 py-2 border-b border-gray-300 text-left">Nyhetsbrev</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="hover:bg-gray-50">
-                    <td class="px-4 py-2 border-b border-gray-300">Input 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Input</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Textarea 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Checkbox 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Select 1</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Julia</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Student</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Gillar katter</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Ja</td>
                 </tr>
                 <tr class="hover:bg-gray-50">
-                    <td class="px-4 py-2 border-b border-gray-300">Input 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Input</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Textarea 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Checkbox 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Select 1</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Matt</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Arbete</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Gillar hundar</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Nej</td>
                 </tr>
                 <tr class="hover:bg-gray-50">
-                    <td class="px-4 py-2 border-b border-gray-300">Input 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Input</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Textarea 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Checkbox 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Select 1</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Moa</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Arbete</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Vill plugga till sjuksköterska</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Ja</td>
                 </tr>
                 <tr class="hover:bg-gray-50">
-                    <td class="px-4 py-2 border-b border-gray-300">Input 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Input</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Textarea 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Checkbox 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Select 1</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Patrik</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Övrigt</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Har två traktorer</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Nej</td>
                 </tr>
                 <tr class="hover:bg-gray-50">
-                    <td class="px-4 py-2 border-b border-gray-300">Input 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Input</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Textarea 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Checkbox 1</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Select 1</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Susanne</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Arbete</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Gillar Coldplay</td>
+                    <td class="px-4 py-2 border-b border-gray-300">Nej</td>
                 </tr>
             </tbody>
         </table>
