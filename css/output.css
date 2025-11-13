@@ -432,6 +432,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -824,6 +827,21 @@
   .sm\:col-span-3 {
     @media (width >= 40rem) {
       grid-column: span 3 / span 3;
+    }
+  }
+  .sm\:m-1 {
+    @media (width >= 40rem) {
+      margin: calc(var(--spacing) * 1);
+    }
+  }
+  .sm\:m-10 {
+    @media (width >= 40rem) {
+      margin: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:mt-1 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 1);
     }
   }
   .sm\:ml-6 {
