@@ -374,6 +374,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-9\/10 {
+    width: calc(9/10 * 100%);
+  }
   .w-auto {
     width: auto;
   }
@@ -527,6 +530,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -810,6 +816,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:w-2\/3 {
+    @media (width >= 64rem) {
+      width: calc(2/3 * 100%);
     }
   }
   .lg\:w-3\/4 {
