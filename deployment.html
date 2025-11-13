@@ -56,7 +56,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Mobile menu items -->
         <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
             <div class="space-y-1 px-2 pt-2 pb-3">
@@ -75,52 +74,57 @@
 
     <h1 class="font-bold text-3xl lg:text-4xl my-8 text-center">Publicering</h1>
 
+    <!-- Information about the deployment method GitHub Pages -->
     <article class="grid md:w-3/4 xl:w-1/2 xl:mx-auto max-w-3xl">
-    <div class="m-5 p-6 bg-white/70 xl:border xl:border-gray-500 xl:rounded-xl xl:shadow-lg">
-        <h2 class="font-bold text-xl lg:text-2xl mb-1">GitHub Pages</h2>
-        <p>Jag använder vanligtvis Netlify för att publicera mina webbsidor, men eftersom jag tidigare funderat på att
-            testa på GitHub Pages kändes det som ett självklart val för denna uppgift. Github Pages är en tjänst från
-            GitHub som direkt från ett repository möjliggör publicering av statiska filer skrivna i HTML, CSS och
-            JavaScript, antingen för ett GitHub-konto (owner.github.io) eller för ett specifikt projekt (owner
-            .github.io/repository-name). Tjänsten är gratis att använda för att publicera ett publikt
-            repository, men för ett privat repository krävs ett betalkonto. Alla som använder GitHub Pages
-            har en skyldighet att följa ”GitHub Terms of Service”.
-            <br><br>
-            Det finns möjlighet för en ”build”-process innan publicering om så skulle behövas. Det
-            rekommendera tillvägagångssättet är att använda den statiska webbplatsgeneratorn Jekyll som har
-            inbyggt stöd för GitHub Pages, men man kan även använda andra verktyg för detta om man så
-            önskar. Eftersom jag använder Bootstraps CDN och TailwindCSS CLI (CSS-koden lagras kontinuerligt
-            i output.css) för ramverken i denna lösning har jag dock ingen kod som kräver ett
-            ”build”-kommando för tillfället.
-            <br><br>
-            Min upplevelse är att GitHub Pages var väldigt enkelt att använda för att publicera en simpel
-            webbplats skapad i HTML och CSS med Bootstrap och Tailwind CSS som ramverk (och därmed även en
-            del automatiskt inkluderad JS-kod). Det finns dock en del begränsningar som gör att det inte
-            lämpar sig för alla projekt. Det är till exempel inte tänkt att användas för e-handel eller
-            transaktioner av olika slag, och de publicerade webbsidorna har dessutom en storleksgräns på
-            1GB.
-            <br><br>
-            All denna information är hämtad från den officiella dokumentationen för GitHub Pages via GitHub Docs.
-        </p>
-    </div>
-    <div class="m-5 p-6 bg-white/70 xl:border xl:border-gray-500 xl:rounded-xl xl:shadow-lg">
-        <h3 class="font-bold text-xl lg:text-2xl mb-1">Publicering</h3>
-        <p>
-            Denna webbplats har publicerats enligt följande steg (för ett GitHub-konto med engelska som språk):</p>
-
-        <ol class="list-decimal ml-5">
-            <li>Navigera till det repository som innehåller koden du vill publicera (eller skapa ett nytt repository).
-            </li>
-            <li>Klicka på ”Settings” i menyn.</li>
-            <li>Klicka på ”Pages” under ”Code and automation” i sidomenyn.</li>
-            <li>Under ”Branch”, välj vilken gren (branch) och vilken mapp webbplatsen ska byggas från (för detta projekt
-                är det satt till ”main” och ”/root”).</li>
-            <li>Efter en stund dyker länken för den publicerade webbplatsen upp högst upp på sidan. Klicka på ”Visit
-                site”
-                för att navigera dit.</li>
-        </ol>
-    </div>
+        <div class="m-5 p-6 bg-white/70 xl:border xl:border-gray-500 xl:rounded-xl xl:shadow-lg">
+            <h2 class="font-bold text-xl lg:text-2xl mb-1">GitHub Pages</h2>
+            <p>Jag använder vanligtvis Netlify för att publicera mina webbsidor, men eftersom jag tidigare funderat på
+                att
+                testa på GitHub Pages kändes det som ett självklart val för denna uppgift. Github Pages är en tjänst
+                från
+                GitHub som direkt från ett repository möjliggör publicering av statiska filer skrivna i HTML, CSS och
+                JavaScript, antingen för ett GitHub-konto (owner.github.io) eller för ett specifikt projekt (owner
+                .github.io/repository-name). Tjänsten är gratis att använda för att publicera ett publikt
+                repository, men för ett privat repository krävs ett betalkonto. Alla som använder GitHub Pages
+                har en skyldighet att följa ”GitHub Terms of Service”.
+                <br><br>
+                Det finns möjlighet för en ”build”-process innan publicering om så skulle behövas. Det
+                rekommenderade tillvägagångssättet är att använda den statiska webbplatsgeneratorn Jekyll som har
+                inbyggt stöd för GitHub Pages, men man kan även använda andra verktyg för detta om man så
+                önskar. Eftersom jag använder Bootstraps CDN och TailwindCSS CLI (CSS-koden lagras kontinuerligt
+                i output.css) för ramverken i denna lösning har jag dock ingen kod som kräver ett
+                ”build”-kommando för tillfället.
+                <br><br>
+                Min upplevelse är att GitHub Pages var väldigt enkelt att använda för att publicera en simpel
+                webbplats skapad i HTML och CSS med Bootstrap och Tailwind CSS som ramverk (och därmed även en
+                del automatiskt inkluderad JS-kod). Det finns dock en del begränsningar som gör att det inte
+                lämpar sig för alla projekt. Det är till exempel inte tänkt att användas för e-handel eller
+                transaktioner av olika slag, och de publicerade webbsidorna har dessutom en storleksgräns på
+                1GB.
+                <br><br>
+                All denna information är hämtad från den officiella dokumentationen för GitHub Pages via <a href="https://docs.github.com/en/pages" target="_blank" class="text-blue-600">GitHub Docs</a>.
+            </p>
+        </div>
+        <div class="mt-3 mb-10 p-6 bg-white/70 xl:border xl:border-gray-500 xl:rounded-xl xl:shadow-lg">
+            <h3 class="font-bold text-xl lg:text-2xl mb-1">Publicering</h3>
+            <p>Denna webbplats har publicerats enligt följande steg (för ett GitHub-konto med engelska som språk):</p>
+            <br>
+            <ol class="list-decimal ml-5">
+                <li>Navigera till det repository som innehåller koden du vill publicera (eller skapa ett nytt
+                    repository).
+                </li>
+                <li>Klicka på ”Settings” i menyn.</li>
+                <li>Klicka på ”Pages” under ”Code and automation” i sidomenyn.</li>
+                <li>Under ”Branch”, välj vilken gren (branch) och vilken mapp webbplatsen ska byggas från (för detta
+                    projekt
+                    är det satt till ”main” och ”/root”).</li>
+                <li>Efter en stund dyker länken för den publicerade webbplatsen upp högst upp på sidan. Klicka på ”Visit
+                    site”
+                    för att navigera dit.</li>
+            </ol>
+        </div>
     </article>
+    <!-- Tailwind footer -->
     <footer class="flex flex-col md:flex-row text-center bg-gray-800 p-5 text-white justify-around gap-4">
         <div class="">Laboration 1 - Fullstacks-utveckling med ramverk</div>
         <div class="">Julia Gustafsson</div>
