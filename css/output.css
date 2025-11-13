@@ -483,9 +483,6 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
-  .border-gray-500 {
-    border-color: var(--color-gray-500);
-  }
   .border-gray-900\/10 {
     border-color: color-mix(in srgb, oklch(21% 0.034 264.665) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
